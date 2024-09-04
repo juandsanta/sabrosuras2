@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Sabrosuras</title>
+
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+
+    <!-- font awesome style -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- nice select -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+        integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
+    <!-- slidck slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha256-UK1EiopXIL+KVhfbFa8xrmAWPeBjMVdvYMYkTAEv/HI=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css.map"
+        integrity="undefined" crossorigin="anonymous" />
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <div class="hero_area">
+        <!-- header section strats -->
+        <header class="header_section">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg custom_nav-container">
+                    <a class="navbar-brand" href="index.html">
+                        <span>
+                            Sabrosuras
+                        </span>
+                    </a>
+                    <div class="" id="">
+                        <div class="User_option">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modaluno">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                <span>Reservas</span>
+                            </button>
+                            <form class="form-inline ">
+                                <input type="search" placeholder="Search" />
+                            </form>
+                        </div>
+                        <div class="custom_menu-btn">
+                            <button onclick="openNav()">
+                                <img src="images/menu.png" alt="">
+                            </button>
+                        </div>
+                        <div id="myNav" class="overlay">
+                            <div class="overlay-content">
+                                <a href="index.html">Inicio</a>
+                                <a href="menu.html">Menu</a>
+                                <a href="acerca.html">Nosotros</a>
+                                <a href="galeria.html">Galeria</a>
+                                <a href="testimonial.html">Testimonios</a>
+                                <a href="contacto.html">Contacto</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- end header section -->
+
+        <!-- slider section -->
+        <section class="slider_section ">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="detail-box">
+                            <h1>
+                                Menu
+                            </h1>
+                            <p>
+                            <p>Conoce los platos que tenemos preparados para ti</p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_container">
+                <div class="item">
+                    <div class="img-box">
+                        <img src="images/slider-img1.png" alt="" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="images/slider-img2.png" alt="" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="images/slider-img3.png" alt="" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="images/slider-img4.png" alt="" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="images/slider-img1.png" alt="" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="images/slider-img2.png" alt="" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="images/slider-img3.png" alt="" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img-box">
+                        <img src="images/slider-img4.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end slider section -->
+    </div>
+
+    <section>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                aria-controls="home" aria-selected="true">Entradas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                aria-controls="profile" aria-selected="false">Platos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab"
+                                aria-controls="messages" aria-selected="false">Principales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab"
+                                aria-controls="settings" aria-selected="false">Postres</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="bebidas-tab" data-toggle="tab" href="#bebidas" role="tab"
+                                aria-controls="bebidas" aria-selected="false">Bebidas</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <table class="table mt-4 table-bordered">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Entrada</th>
+                                                    <th scope="col">Precio</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">Aborrajado</th>
+                                                    <td>$2200</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Empanada</th>
+                                                    <td>$1200</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Arepa de chocolo</th>
+                                                    <td>$3500</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <table class="table mt-4 table-bordered">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Plato</th>
+                                                    <th scope="col">Precio</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">Mondongo</th>
+                                                    <td>$17000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Bandeja paisa</th>
+                                                    <td>$22000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Lechona</th>
+                                                    <td>$18000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Frijoles antioqueños</th>
+                                                    <td>12000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Sancocho</th>
+                                                    <td>$15000</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <table class="table mt-4 table-bordered">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Principales</th>
+                                                    <th scope="col">Precio</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">Bandeja paisa</th>
+                                                    <td>$22000</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Frijoles antioqueños</th>
+                                                    <td>$12000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Sancocho</th>
+                                                    <td>$35000</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <table class="table mt-4 table-bordered">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Postres</th>
+                                                    <th scope="col">Precio</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">Mil hojas</th>
+                                                    <td>$2200</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Flan</th>
+                                                    <td>1200</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Brownie</th>
+                                                    <td>$3500</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="bebidas" role="tabpanel" aria-labelledby="bebidas-tab">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <table class="table mt-4 table-bordered">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Bebidas</th>
+                                                    <th scope="col">Precio</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">Jarra jugo en leche</th>
+                                                    <td>$5000</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Jarra jugo en agua</th>
+                                                    <td>$4000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Michelada</th>
+                                                    <td>$7500</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <div class="footer_container">
+        <!-- info section -->
+        <section class="info_section ">
+            <div class="container">
+                <div class="info_links">
+                    <ul>
+                        <li class="active">
+                            <a href="index.html">
+                                Inicio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="menu.html">
+                                Menu
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" href="acerca.html">
+                                Nosotros
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" href="galeria.html">
+                                Galeria
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" href="testimonial.html">
+                                Testimonios
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" href="contacto.html">
+                                Contacto
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="social_box">
+                    <a href="https://www.facebook.com/?locale=es_LA">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://co.linkedin.com/">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- end info_section -->
+
+
+        <!-- footer section -->
+        <footer class="footer_section">
+            <div class="container">
+                <p>
+                    &copy; <span id="displayYear"></span> Todos los derechos reservados <br>
+                    Juan David Santa M.
+                </p>
+            </div>
+        </footer>
+        <!-- footer section -->
+
+    </div>
+
+
+    <!-- Modales -->
+    <div class="modal fade" id="Modaluno" tabindex="-1" role="dialog" aria-labelledby="ModalunoLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalunoLabel">Reserva de mesa</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="col-6 mb-3">
+                                            <label for="validationDefault01">Nombre</label>
+                                            <input type="text" class="form-control" id="validationDefault01" required>
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <label for="validationDefault02">Apellido</label>
+                                            <input type="text" class="form-control" id="validationDefault02" required>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" placeholder="Correo Electronico"
+                                                    aria-label="Correo Electronico" aria-describedby="basic-addon2">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="validationDefault03">Numero celular</label>
+                                            <input type="number" class="form-control" id="validationDefault03"
+                                                placeholder="Telefono" required>
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <label for="validationDefault04"># de personas</label>
+                                            <input type="number" class="form-control" id="validationDefault04"
+                                                placeholder="10" required>
+                                        </div>
+                                        <div class="col mb-3">
+                                            <label for="validationDefault05">Fecha de reserva</label>
+                                            <input type="date" class="form-control" id="validationDefault05" required>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" type="submit">Enviar reserva</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- jQery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.js"></script>
+    <!-- slick  slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+    <!-- nice select -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"
+        integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+
+
+</body>
+
+</html>

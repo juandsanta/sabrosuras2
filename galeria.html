@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Sabrosuras</title>
+
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+
+    <!-- font awesome style -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <!-- nice select -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+        integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
+    <!-- slidck slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha256-UK1EiopXIL+KVhfbFa8xrmAWPeBjMVdvYMYkTAEv/HI=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css.map"
+        integrity="undefined" crossorigin="anonymous" />
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/lightbox.css">
+</head>
+
+<body>
+
+    <div class="hero_area2">
+        <!-- header section strats -->
+        <header class="header_section">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg custom_nav-container">
+                    <a class="navbar-brand" href="index.html">
+                        <span>
+                            Sabrosuras
+                        </span>
+                    </a>
+                    <div class="" id="">
+                        <div class="User_option">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modaluno">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                <span>Reservas</span>
+                            </button>
+                            <form class="form-inline ">
+                                <input type="search" placeholder="Search" />
+                            </form>
+                        </div>
+                        <div class="custom_menu-btn">
+                            <button onclick="openNav()">
+                                <img src="images/menu.png" alt="">
+                            </button>
+                        </div>
+                        <div id="myNav" class="overlay">
+                            <div class="overlay-content">
+                                <a href="index.html">Inicio</a>
+                                <a href="menu.html">Menu</a>
+                                <a href="acerca.html">Nosotros</a>
+                                <a href="galeria.html">Galeria</a>
+                                <a href="testimonial.html">Testimonios</a>
+                                <a href="contacto.html">Contacto</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- end header section -->
+
+        <!-- slider section -->
+        <section class="slider_section ">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="detail-box">
+                            <h1>
+                                Galeria
+                            </h1>
+                            <p>
+                                Estos son los lugares y las mejores comidas que podras encontrar en nuestros sitios
+                                fisicos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end slider section -->
+    </div>
+
+    <section>
+        <div class="container">
+            <!-- Images used to open the lightbox -->
+            <div class="row">
+                <div class="py-2 col-md-6 col-lg-3">
+                    <img src="images/ga1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow img-fluid">
+                </div>
+                <div class="py-2 col-md-6 col-lg-3">
+                    <img src="images/ga2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow img-fluid">
+                </div>
+                <div class="py-2 col-md-6 col-lg-3">
+                    <img src="images/ga3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow img-fluid">
+                </div>
+                <div class="py-2 col-md-6 col-lg-3">
+                    <img src="images/ga4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow img-fluid">
+                </div>
+            </div>
+            <!-- The Modal/Lightbox -->
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 4</div>
+                        <img class="img-fluid" src="images/ga1.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 4</div>
+                        <img class="img-fluid" src="images/ga2.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 4</div>
+                        <img class="img-fluid" src="images/ga3.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 4</div>
+                        <img class="img-fluid" src="images/ga4.jpg" style="width:100%">
+                    </div>
+
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <!-- Caption text -->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer_container">
+        <!-- info section -->
+        <section class="info_section ">
+            <div class="container">
+                <div class="info_links">
+                    <ul>
+                        <li class="active">
+                            <a href="index.html">
+                                Inicio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="menu.html">
+                                Menu
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" href="acerca.html">
+                                Nosotros
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" href="galeria.html">
+                                Galeria
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" href="testimonial.html">
+                                Testimonios
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" href="contacto.html">
+                                Contacto
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="social_box">
+                    <a href="https://www.facebook.com/?locale=es_LA">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://co.linkedin.com/">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- end info_section -->
+
+
+        <!-- footer section -->
+        <footer class="footer_section">
+            <div class="container">
+                <p>
+                    &copy; <span id="displayYear"></span> Todos los derechos reservados <br>
+                    Juan David Santa M.
+                </p>
+            </div>
+        </footer>
+        <!-- footer section -->
+    </div>
+
+
+
+    <!-- lightbox -->
+    <script>
+        // Open the Modal
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        // Close the Modal
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+
+    <!-- Modales -->
+    <div class="modal fade" id="Modaluno" tabindex="-1" role="dialog" aria-labelledby="ModalunoLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalunoLabel">Reserva de mesa</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="col-6 mb-3">
+                                            <label for="validationDefault01">Nombre</label>
+                                            <input type="text" class="form-control" id="validationDefault01" required>
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <label for="validationDefault02">Apellido</label>
+                                            <input type="text" class="form-control" id="validationDefault02" required>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" placeholder="Correo Electronico"
+                                                    aria-label="Correo Electronico" aria-describedby="basic-addon2">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="validationDefault03">Numero celular</label>
+                                            <input type="number" class="form-control" id="validationDefault03"
+                                                placeholder="Telefono" required>
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <label for="validationDefault04"># de personas</label>
+                                            <input type="number" class="form-control" id="validationDefault04"
+                                                placeholder="10" required>
+                                        </div>
+                                        <div class="col mb-3">
+                                            <label for="validationDefault05">Fecha de reserva</label>
+                                            <input type="date" class="form-control" id="validationDefault05" required>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" type="submit">Enviar reserva</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.js"></script>
+    <!-- slick  slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+    <!-- nice select -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"
+        integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
